@@ -1,4 +1,4 @@
-package lilianeExercicios;
+package StringExercicios;
 
 import java.util.Scanner;
 
