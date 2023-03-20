@@ -6,20 +6,22 @@ public class Exer04 {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		Integer massaFinal = 0;
-		Integer massaInicial = 0;
+		Double massaFinal = 0.0;
+		Double massaInicial = 0d;
 		Integer contador = 0;
 		Integer contHoras = 0;
 		
 		System.out.println("Escreva a massa inicial do material: ");
-		massaFinal = scanner.nextInt();
+		massaFinal = scanner.nextDouble();
 		massaInicial = massaFinal;
 		
-		while(massaFinal > 0.5) {
-			massaFinal /= 2;
+		do {
+			System.out.println("Massa final: " + massaFinal);
 			contador++;
-		}
+			massaFinal /= 2;
+		}while(massaFinal > 0.5);
 		
+		contador -= 1;
 		Integer segundos = contador * 50;
 		System.out.println("Segundos: " + segundos);
 		System.out.println("Contador: " + contador);
@@ -35,14 +37,13 @@ public class Exer04 {
 		System.out.println("Massa final: " + massaFinal);
 		
 		if(horas >= 0) {
-			System.out.print(horas + " horas, ");
+			System.out.printf("%d horas, ", horas);
 		} 
-		if(minutos > 0) {
-			System.out.print(minutos + " minutos, e ");
+		if(minutos >= 0) {
+			System.out.printf("%d minutos, e ", minutos);
 		}
-		if(segundos > 0) {
-			System.out.print(segundos + " segundos.");
+		if(segundos >= 0) {
+			System.out.printf("%d segundos.", segundos);
 		}
-		
 	}
 }
