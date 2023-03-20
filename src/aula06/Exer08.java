@@ -12,22 +12,14 @@ public class Exer08 {
 			
 			
 			String[] partes = nome.split(" ");
-			
-//			String nomezin = "";
-//			nomezin = partes[i];
 		
 			for(int i = 0; i < partes.length; i++) {
 				if(partes[i].length() > 2) {
 					char result1 = partes[i].charAt(0);
-					System.out.print(result1 + "."); 
+					System.out.print(result1 + ". "); 
 				}else {
-					
+					System.out.print(partes[i] + " ");
 				}
-				
-				
 			}
-			
-
-		
 	}
 }

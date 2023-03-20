@@ -11,25 +11,29 @@ public class Exer01 {
 		Double media = 0d;
 		Double maior = 0d;
 		Double menor =  0d;
-		System.out.println("Digite o número desejado (caso queira sair, digite um número negativo): ");
+		boolean system = true;
+		System.out.println("Digite os números desejados (caso queira sair, digite um número negativo): ");
 		
 		do{
 			num = scanner.nextDouble();
-
+			
+			if(system) {
+				maior = num;
+				menor = num;
+			}
+			
+			system = false;
+			
 			if(num > 0) {
-				if(num > maior) {
+				if(maior < num) {
 					maior = num;
 				} 
-				
-				if(num < menor){
+					
+				if(menor > num){
 					menor = num;
 				}
 			}
-			System.out.println("Maior: "+ maior);
-
-			System.out.println("Menor: " + menor);
-			
-			
+				
 			if(num > 0) {
 				soma += num;
 				cont++;

@@ -20,7 +20,9 @@ public class Exer06 {
 			System.out.println("A multa deve ser de R$130,16");
 		} else if(velocidade > multaLeve && velocidade <= multaMedia) {
 			System.out.println("A multa deve ser de R$195,23");
-		}else {
+		}else if(velocidade < velocidadePista) {
+			System.out.println("Velocidade permitida");
+		}else{
 			System.out.println("A multa deve ser de R$880,41");
 		}
 	}
