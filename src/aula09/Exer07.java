@@ -24,14 +24,10 @@ public class Exer07 {
 	}
 	
 	public void adiciona(Integer numero) {
-		if(lista.isEmpty()) {
+		if(!lista.contains(numero)) {
 			lista.add(numero);
-		}else{
-			for(int i = 0; i < lista.size(); i++) {
-				if(lista.get(i) == numero) {
-					lista.add(i, numero);
-				}
-			}
+		}else {
+			System.out.println("Número invalido");
 		}
 	}	
 
@@ -45,12 +41,12 @@ public class Exer07 {
 	}
 	
 	public void tamanho() {
-		System.out.println("Tamanho: " + lista.size() + " itens na lista.");
+		System.out.println("A lista possui: " + lista.size() + " elemento(os).");
 	}
 
 	public void imprime() {
-		for(int i = 0; i < lista.size(); i++) {
-			System.out.println(lista.get(i));
+		for(Integer itens : lista) {
+			System.out.println("[" + itens + "]");
 		}
 	}
 	
