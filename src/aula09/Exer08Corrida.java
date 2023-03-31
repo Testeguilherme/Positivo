@@ -48,8 +48,8 @@ public class Exer08Corrida {
 		this.pessoa = pessoa;
 	}
 	
-	public void adicionar(Exer08Pessoa pessoa2) {
-		pessoa.add(pessoa2);
+	public void adicionar(Exer08Pessoa pessoaUm) {
+		pessoa.add(pessoaUm);
 	}
 	
 	public void remover(Exer08Pessoa pessoa2) {

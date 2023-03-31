@@ -31,9 +31,5 @@ public class Exer08Teste {
 		corrida.imc();
 		
 		
-		
-		
-		
-		
 	}
 }
