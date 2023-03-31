@@ -45,9 +45,10 @@ public class Exer07 {
 	}
 
 	public void imprime() {
-		for(Integer itens : lista) {
-			System.out.println("[" + itens + "]");
-		}
+		System.out.println(lista);
+//		for(Integer itens : lista) {
+//			System.out.println("[" + itens + "]");
+//		}
 	}
 	
 	
