@@ -69,6 +69,7 @@ Integer number = scanner.nextInt();
 				num = 2;
 			}
 		}
+		scanner.nextInt();
 		
 	}
 }
