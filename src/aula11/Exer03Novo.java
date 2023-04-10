@@ -26,10 +26,9 @@ public class Exer03Novo extends Exer03Imovel{
 	}
 	
 	public void imprimeNovo() {
-		Double novoValorImovel = getPreco() + (getPreco() * porcentagemValorizacao); 
 		System.out.println( imprimeImovel() +
-				"\nValor do imóvel valorizado: " + novoValorImovel
-				);
+				"\nProcentagem de valorização: " + porcentagemValorizacao +
+				"\nValor do imóvel valorizado: " + getPreco());
 	}
 	
 

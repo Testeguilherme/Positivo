@@ -27,9 +27,9 @@ public class Exer03Velho extends Exer03Imovel{
 	
 	
 	public void imprimeVelho() {
-		Double valorImovelDesconto = getPreco() - (getPreco() * porcentagemDesvalorizacao);
 		System.out.println(imprimeImovel() +
-				"\nValor do imóvel com desconto: " + valorImovelDesconto);
+				"\nProcentagem de desconto: " + porcentagemDesvalorizacao +
+				"\nValor do imóvel com desconto: " + getPreco());
 	}
 
 }
