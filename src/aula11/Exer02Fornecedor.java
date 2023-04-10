@@ -35,10 +35,10 @@ public class Exer02Fornecedor extends Exer02Pessoa{
 		System.out.println("Total de crédito: " + result); 
 	}
 
-	public String imprimeFornecedor() {
-		return imprimePessoa() +
+	public void imprimeFornecedor() {
+		System.out.println( imprimePessoa() +
 				"\nValor de crédito: "+ valorCredito +
-				"\nValor dívida: " + valorDivida;
+				"\nValor dívida: " + valorDivida);
 	}
 	
 }
