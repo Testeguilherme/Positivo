@@ -8,7 +8,7 @@ public class Exer03Teste {
 		Exer03Novo novo = new Exer03Novo(0.1);
 		Exer03Velho velho = new Exer03Velho(0.1);
 		
-		System.out.println(imovel.getPreco()); 
+		System.out.println(imovel.getPreco());
 		novo.setNovoPreco(imovel);
 		System.out.println(imovel.imprimeImovel()); 
 		
