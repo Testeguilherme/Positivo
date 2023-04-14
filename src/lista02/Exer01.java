@@ -1,21 +1,14 @@
 package lista02;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Exer01 {
 	
 	public Integer fatorial(Integer number) {
-		Integer numero1 = number;
-		Integer numero2 = numero1 - 1;
-		Integer cont = numero1;
-		Integer soma = 0;
-		
-		for(int i = 0; i < cont; i++) {
-			if(numero2 > 0) {
-				soma = numero1 * numero2;
-				numero1 = soma;
-				numero2--;
-			}
+		int soma = number;
+		for(int i = 1; i < number; i++) {
+			soma = soma * (number - i);
 		}
 		return soma;
 	}

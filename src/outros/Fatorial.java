@@ -7,17 +7,11 @@ public class Fatorial {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Digite: ");
-		Integer num1 = scanner.nextInt();
-		Integer num2 = num1 - 1;
-		Integer contador = num1;
-		Integer soma = 0;
+		Integer num = scanner.nextInt();
 
-		for(int i = 1; i < contador; i++) {
-			if(num2 > 0) {
-				soma = num1 * num2;
-				num1 = soma;
-				num2--;
-			}
+		int soma = num;
+		for(int i = 1; i < num; i++) {
+			soma = soma * (num - i);
 		}
 		
 		System.out.println("Soma: " + soma);
